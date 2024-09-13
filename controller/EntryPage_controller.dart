@@ -12,7 +12,7 @@ class EntryController {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => ginPage(loginController: loginController),
+        builder: (context) => LoginPage(loginController: loginController),
       ),
     );
   }
