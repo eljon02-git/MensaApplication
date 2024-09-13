@@ -1,0 +1,19 @@
+{
+  "@@locale": "de",
+  "title": "Willkommen",
+  "@title": {
+    "description": "Der Titel des Willkommensbildschirms"
+  },
+  "message": "Zum Login",
+  "@message": {
+    "description": "Aufforderung an den Benutzer, sich anzumelden"
+  },
+  "welcomeMessage": "Herzlich Willkommen!",
+  "withLogin": "Login",
+  "withoutLogin": "ohne Login",
+  "monday": "Montag",
+  "tuesday": "Dienstag",
+  "wednesday": "Mittwoch",
+  "thursday": "Donnerstag",
+  "friday": "Freitag"
+}

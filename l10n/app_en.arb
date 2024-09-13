@@ -1,0 +1,43 @@
+{
+  "@@locale": "en",
+  "title": "Welcome",
+  "@title": {
+    "description": "The title of the welcome screen"
+  },
+  "message": "Go to log in",
+  "@message": {
+    "description": "Prompt for the user to log in"
+  },
+  "welcomeMessage": "Welcome",
+  "@welcomeMessage": {
+    "description": "Welcome on Entry page"
+  },
+  "withLogin": "Login",
+  "@withLogin": {
+    "description": "Choice do choose to Login as an Admin"
+  },
+  "withoutLogin": "without Login",
+  "@withoutLogin": {
+    "description": "Choice do choose to Login as an User"
+  },
+  "monday": "monday",
+  "@monday": {
+    "description": "Monday for MealPlan"
+  },
+  "tuesday": "tuesday",
+  "@tuesday": {
+    "description": "tuesday for MealPlan"
+  },
+  "wednesday": "wednesday",
+  "@wednesday": {
+    "description": "wednesday for MealPlan"
+  },
+  "thursday": "thursday",
+  "@thursday": {
+    "description": "thursday for MealPlan"
+  },
+  "friday": "friday",
+  "@friday": {
+    "description": "friday for MealPlan"
+  }
+}
