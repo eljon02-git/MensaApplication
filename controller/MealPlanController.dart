@@ -1,6 +1,7 @@
 import '../model/MealPlan_model.dart';
 import '../model/Database_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MealPlanController {
   final DatabaseHelper _dbHelper = DatabaseHelper.instance;
@@ -130,27 +131,28 @@ class MealPlanController {
 
   Future<void> createSampleMeals(int weekDayId) async {
     List<Meal> sampleMeals = [
-      Meal(weekDayId: weekDayId, mealName: "Chicken Sandwich", mealType: "Mit Fleisch", price: 5.99),
-      Meal(weekDayId: weekDayId, mealName: "Veggie Burger", mealType: "Vegetarisch", price: 4.99),
-      Meal(weekDayId: weekDayId, mealName: "Pasta Bolognese", mealType: "Mit Fleisch", price: 6.49),
-      Meal(weekDayId: weekDayId, mealName: "Caesar Salad", mealType: "Vegetarisch", price: 3.99),
-      Meal(weekDayId: weekDayId, mealName: "Margherita Pizza", mealType: "Vegetarisch", price: 5.49),
-      Meal(weekDayId: weekDayId, mealName: "Sushi Roll", mealType: "Fisch", price: 7.99),
-      Meal(weekDayId: weekDayId, mealName: "Grilled Cheese Sandwich", mealType: "Vegetarisch", price: 4.49),
-      Meal(weekDayId: weekDayId, mealName: "Beef Steak", mealType: "Mit Fleisch", price: 10.99),
-      Meal(weekDayId: weekDayId, mealName: "Falafel Wrap", mealType: "Vegetarisch", price: 4.99),
-      Meal(weekDayId: weekDayId, mealName: "Chicken Caesar Salad", mealType: "Mit Fleisch", price: 6.49),
-      Meal(weekDayId: weekDayId, mealName: "Vegetable Stir Fry", mealType: "Vegan", price: 5.99),
-      Meal(weekDayId: weekDayId, mealName: "Spaghetti Carbonara", mealType: "Mit Fleisch", price: 6.99),
-      Meal(weekDayId: weekDayId, mealName: "Tuna Salad", mealType: "Fisch", price: 5.99),
-      Meal(weekDayId: weekDayId, mealName: "Minestrone Soup", mealType: "Vegetarisch", price: 3.99),
-      Meal(weekDayId: weekDayId, mealName: "Cheeseburger", mealType: "Mit Fleisch", price: 6.49),
-      Meal(weekDayId: weekDayId, mealName: "Avocado Toast", mealType: "Vegan", price: 4.99),
-      Meal(weekDayId: weekDayId, mealName: "Salmon Fillet", mealType: "Fisch", price: 9.99),
-      Meal(weekDayId: weekDayId, mealName: "Quinoa Salad", mealType: "Vegan", price: 5.49),
-      Meal(weekDayId: weekDayId, mealName: "Vegetarian Lasagna", mealType: "Vegetarisch", price: 6.49),
-      Meal(weekDayId: weekDayId, mealName: "Chicken Nuggets", mealType: "Mit Fleisch", price: 4.99),
+      Meal(weekDayId: 0, mealName: "Chicken Sandwich", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 5.99),
+      Meal(weekDayId: 0, mealName: "Veggie Burger", mealType: AppLocalizations.of(context)!.mealTypeVegetarian, price: 4.99),
+      Meal(weekDayId: 0, mealName: "Pasta Bolognese", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 6.49),
+      Meal(weekDayId: 0, mealName: "Caesar Salad", mealType: AppLocalizations.of(context)!.mealTypeVegetarian, price: 3.99),
+      Meal(weekDayId: 0, mealName: "Margherita Pizza", mealType: AppLocalizations.of(context)!.mealTypeVegetarian, price: 5.49),
+      Meal(weekDayId: 0, mealName: "Sushi Roll", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 7.99),
+      Meal(weekDayId: 0, mealName: "Grilled Cheese Sandwich", mealType: AppLocalizations.of(context)!.mealTypeVegetarian, price: 4.49),
+      Meal(weekDayId: 0, mealName: "Beef Steak", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 10.99),
+      Meal(weekDayId: 0, mealName: "Falafel Wrap", mealType: AppLocalizations.of(context)!.mealTypeVegetarian, price: 4.99),
+      Meal(weekDayId: 0, mealName: "Chicken Caesar Salad", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 6.49),
+      Meal(weekDayId: 0, mealName: "Vegetable Stir Fry", mealType: AppLocalizations.of(context)!.mealTypeVegan, price: 5.99),
+      Meal(weekDayId: 0, mealName: "Spaghetti Carbonara", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 6.99),
+      Meal(weekDayId: 0, mealName: "Tuna Salad", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 5.99),
+      Meal(weekDayId: 0, mealName: "Minestrone Soup", mealType: AppLocalizations.of(context)!.mealTypeVegetarian, price: 3.99),
+      Meal(weekDayId: 0, mealName: "Cheeseburger", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 6.49),
+      Meal(weekDayId: 0, mealName: "Avocado Toast", mealType:  AppLocalizations.of(context)!.mealTypeVegan, price: 4.99),
+      Meal(weekDayId: 0, mealName: "Salmon Fillet", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 9.99),
+      Meal(weekDayId: 0, mealName: "Quinoa Salad", mealType: AppLocalizations.of(context)!.mealTypeVegan, price: 5.49),
+      Meal(weekDayId: 0, mealName: "Vegetarian Lasagna", mealType: AppLocalizations.of(context)!.mealTypeVegetarian, price: 6.49),
+      Meal(weekDayId: 0, mealName: "Chicken Nuggets", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 4.99),
     ];
+
 
     // Wähle zufällig 3 Mahlzeiten aus der Liste aus
     sampleMeals.shuffle();
