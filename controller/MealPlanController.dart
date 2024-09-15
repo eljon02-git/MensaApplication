@@ -129,7 +129,7 @@ class MealPlanController {
 
 
 
-  Future<void> createSampleMeals(int weekDayId) async {
+  Future<void> createSampleMeals(int weekDayId, BuildContext context) async {
     List<Meal> sampleMeals = [
       Meal(weekDayId: 0, mealName: "Chicken Sandwich", mealType: AppLocalizations.of(context)!.mealTypeWithMeat, price: 5.99),
       Meal(weekDayId: 0, mealName: "Veggie Burger", mealType: AppLocalizations.of(context)!.mealTypeVegetarian, price: 4.99),
